@@ -53,8 +53,8 @@ end
 
 def runner
   welcome
-  initial_round
-  hit? = card_total 
+  initial_round = card_total
+  hit? 
   loop do 
     if card_total < 21 
       card_total = hit?(card_total)
